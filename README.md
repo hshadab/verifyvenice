@@ -1,21 +1,21 @@
 # VerifyVenice
 
-**Independent, cryptographically verifiable audit of Venice.ai's inference claims.**
+**Open-source spot-check of Venice.ai's inference claims, with cryptographically verifiable computations.**
 
 Venice.ai markets itself as an "uncensored" AI platform running open-source models. This project tests two claims:
 
 1. **Model Authenticity** — Is Venice actually running the models they say they are (e.g. Llama 3.3 70B)?
 2. **System Prompt Transparency** — Does their "uncensored" toggle actually do anything?
 
-We compare Venice's API responses against reference providers (Together.ai for 70B, local Ollama for 3B ground truth), then generate **zero-knowledge proofs** (JOLT-Atlas zkML) so anyone can verify the auditor didn't fabricate results.
+We compare Venice's API responses against reference providers (Together.ai for 70B, local Ollama for 3B ground truth), then generate **zero-knowledge proofs** (JOLT-Atlas zkML) so anyone can verify the computations weren't fabricated.
 
-> **Caveats**: This is a point-in-time audit (March 2026) with a sample of 50 prompts per test group. Venice's 70B model does not support logprobs, so the 70B authenticity finding relies on text similarity metrics only — weaker evidence than logprob-based verification. The 3B verification is much stronger.
+> **Caveats**: This is a point-in-time spot-check (March 2026) with 50 prompts per test group — not an audit. Venice's 70B model does not support logprobs, so the 70B result relies on text similarity metrics only — weaker evidence than logprob-based verification. The 3B verification is much stronger.
 
 ---
 
-## Key Findings
+## Results
 
-### Venice is running the models they claim
+### 70B: Text similarity is consistent with the claimed model
 
 ```mermaid
 xychart-beta
@@ -27,7 +27,7 @@ xychart-beta
 
 **Mean cosine similarity: 0.71** across 50 test pairs (Venice 70B vs Together.ai 70B). Factual and reasoning prompts show strong agreement (~0.82). Creative prompts diverge more (0.51), which is expected — creative tasks are inherently variable even on the same model.
 
-Venice 70B was classified as **"70b-class" with 67.7% confidence** using a text-based classifier. Not a slam dunk, but a pass.
+Venice 70B was classified as **"70b-class" with 67.7% confidence** using a text-based classifier. Suggestive, not conclusive — text similarity alone is weak evidence.
 
 ### 3B Model: Strong Logprob Verification
 
@@ -39,18 +39,18 @@ xychart-beta
     bar [1.00, 0.07, 0.45, 0.01, 0.44]
 ```
 
-For the 3B model (which supports logprobs), factual prompts show **0.999 logprob correlation** — near-identical probability distributions. The logprob-based classifier achieved **100% accuracy** at distinguishing 3B from 70B responses, while the text-only classifier scored 50% (random chance).
+For the 3B model (which supports logprobs), factual prompts show **0.999 logprob correlation** — strongly correlated probability distributions. The logprob-based classifier achieved **100% accuracy** at distinguishing 3B from 70B responses, while the text-only classifier scored 50% (random chance).
 
-This tells us: **logprobs are the gold standard** for model verification. Text features alone can't reliably fingerprint a model.
+This suggests **logprobs are far more reliable** for model verification. Text features alone can't reliably fingerprint a model.
 
 ### Classifier Performance
 
 | Classifier | Accuracy | Features | Verdict |
 |---|---|---|---|
-| Logprob-based | **100%** | 4 logprob features | Can perfectly distinguish 3B vs 70B |
+| Logprob-based | **100%** | 4 logprob features | Reliably distinguishes 3B vs 70B in our sample |
 | Text-based | **50%** | 6 text features | Random chance — text alone is insufficient |
 
-### The "Uncensored" Toggle is Real
+### The "Uncensored" Toggle Measurably Changes Behavior
 
 ```mermaid
 xychart-beta
@@ -68,7 +68,7 @@ We sent 15 prompts with and without Venice's `include_venice_system_prompt` togg
 - Code and reasoning prompts barely affected (length ratio ~0.96)
 - Mean cosine similarity between with/without: **0.76**
 
-The toggle is not a placebo. When enabled, Venice prepends a system prompt that measurably alters model behavior, particularly for short factual queries.
+The toggle is not cosmetic. When enabled, Venice prepends a system prompt that measurably alters model behavior, particularly for short factual queries.
 
 ### System Prompt Effect by Category
 
@@ -84,14 +84,14 @@ The toggle is not a placebo. When enabled, Venice prepends a system prompt that 
 
 ## zkML Proofs (JOLT-Atlas)
 
-Both audit computations are backed by zero-knowledge proofs using [JOLT-Atlas](https://github.com/ICME-Lab/jolt-atlas):
+Both computations are backed by zero-knowledge proofs using [JOLT-Atlas](https://github.com/ICME-Lab/jolt-atlas):
 
-| Circuit | What it proves | Proof Size | Prove Time |
+| Circuit | What it verifies | Proof Size | Prove Time |
 |---|---|---|---|
 | Output Comparison | Similarity score was computed correctly | 24.5 KB | 0.73s |
 | Model Fingerprint | Classifier was run correctly on features | 24.4 KB | 0.73s |
 
-The proofs use **HyperKZG over BN254** with Blake2b transcripts. Anyone with the ONNX model and proof file can independently verify the auditor didn't fabricate results:
+The proofs use **HyperKZG over BN254** with Blake2b transcripts. Anyone with the ONNX model and proof file can independently verify the computations were performed correctly. Note: the proofs verify the math, not that the inputs came from Venice's API — data provenance is a separate problem.
 
 ```bash
 cd rust
@@ -164,7 +164,7 @@ verifyvenice/
 2. **Point-in-time snapshot** — Venice could change infrastructure at any time.
 3. **50 prompts per group** — larger sample sizes would improve statistical power.
 4. **Text classifier at random chance (50%)** — text features alone cannot distinguish model sizes. This is a known limitation, not a bug.
-5. **zkML proofs verify computation, not data** — the proofs attest that the similarity/classification was computed correctly on the given inputs, but don't prove the inputs came from Venice's API.
+5. **zkML proofs verify computation, not data provenance** — the proofs attest that the similarity/classification was computed correctly on the given inputs, but don't prove the inputs came from Venice's API. This is an open research problem.
 
 ## Running It Yourself
 
