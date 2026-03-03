@@ -1,0 +1,92 @@
+[
+  {
+    "test_id": "20260303_174906_709084e3",
+    "group": "B",
+    "subgroup": "temporal_consistency",
+    "prompt_text": "The mitochondria is the powerhouse of the cell. Explain why this statement, while popular, is an oversimplification of mitochondrial function.",
+    "seed": 42,
+    "round": 0,
+    "venice_70b": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "dbe75b327afbe0f274e378385c8c18e141f97905856a29034f49190176404361",
+      "response_text": "The statement \"the mitochondria is the powerhouse of the cell\" is a popular phrase that originated from a 1950s educational film. While it's true that mitochondria play a crucial role in energy production, this statement oversimplifies the complexity and diversity of mitochondrial functions. Here's why:\n\n1. **Energy production is not the only function**: Mitochondria are indeed responsible for generating most of the cell's energy in the form of ATP (adenosine triphosphate) through cellular respiration. However, they also perform other essential tasks, such as:\n\t* Regulating cellular calcium levels\n\t* Participating in cell signaling pathways\n\t* Modulating reactive oxygen species (ROS) production\n\t* Influencing cell growth, differentiation, and death\n\t* Interacting with other organelles, like the endoplasmic reticulum and peroxisomes\n2. **Mitochondria are dynamic and adaptable**: Mitochondria are not static structures; they can change shape, size, and function in response to cellular needs. They can fuse, divide, and even move within the cell to optimize energy production and distribution. This dynamic nature allows mitochondria to respond to changes in energy demand, stress, and environmental conditions.\n3.",
+      "response_hash": "7dec71bb1c74d5c4e4e85e0efa75f1167aebb02fb4896ccbb6c5fec953fe34e6",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 37,
+        "completion_tokens": 256,
+        "total_tokens": 293
+      },
+      "latency_seconds": 35.90700000000652,
+      "seed": 42,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:49:43.468514+00:00"
+  },
+  {
+    "test_id": "20260303_174943_d924ef97",
+    "group": "B",
+    "subgroup": "temporal_consistency",
+    "prompt_text": "The mitochondria is the powerhouse of the cell. Explain why this statement, while popular, is an oversimplification of mitochondrial function.",
+    "seed": 42,
+    "round": 1,
+    "venice_70b": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "dbe75b327afbe0f274e378385c8c18e141f97905856a29034f49190176404361",
+      "response_text": "The statement \"the mitochondria is the powerhouse of the cell\" is a popular phrase that originated from a 1950s educational film. While it's true that mitochondria play a crucial role in energy production, this statement oversimplifies the complexity and diversity of mitochondrial functions. Here's why:\n\n1. **Energy production is not the only function**: Mitochondria are indeed responsible for generating most of the cell's energy in the form of ATP (adenosine triphosphate) through the process of cellular respiration. However, they also participate in other essential cellular processes, such as:\n\t* Regulating cellular calcium levels\n\t* Modulating reactive oxygen species (ROS) production\n\t* Influencing cell signaling pathways\n\t* Participating in apoptosis (programmed cell death)\n\t* Regulating the cell cycle\n2. **Mitochondria are dynamic and adaptable**: Mitochondria are not static structures; they are dynamic organelles that can change shape, size, and function in response to cellular needs. They can fuse, divide, and move within the cell to optimize energy production and respond to changes in the cellular environment.\n3. **Mitochondrial function varies across cell types**: Different cell types have distinct energy requirements, and mitochondria adapt",
+      "response_hash": "41db24b41e8497eabd9f47f8d2ae3cec62598dd0904c7fb6cfbe7421e017d0e5",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 37,
+        "completion_tokens": 256,
+        "total_tokens": 293
+      },
+      "latency_seconds": 55.96799999999348,
+      "seed": 42,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:50:40.940007+00:00"
+  },
+  {
+    "test_id": "20260303_175040_6b9a456f",
+    "group": "B",
+    "subgroup": "temporal_consistency",
+    "prompt_text": "The mitochondria is the powerhouse of the cell. Explain why this statement, while popular, is an oversimplification of mitochondrial function.",
+    "seed": 42,
+    "round": 2,
+    "venice_70b": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "dbe75b327afbe0f274e378385c8c18e141f97905856a29034f49190176404361",
+      "response_text": "\\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+      "response_hash": "4ea2d30909d0ca7cda37dd8a3fe5e2a7d5cd78e4b5e01a6bdafe7d26f6bd054b",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 37,
+        "completion_tokens": 256,
+        "total_tokens": 293
+      },
+      "latency_seconds": 11.452999999979511,
+      "seed": 42,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:50:53.911949+00:00"
+  }
+]

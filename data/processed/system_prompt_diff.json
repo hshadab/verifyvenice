@@ -1,0 +1,767 @@
+[
+  {
+    "test_id": "20260303_171143_de75adc1",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "factual",
+    "prompt_text": "What is the capital of France? Answer in one sentence.",
+    "seed": 42,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "d58aabac70794a3dfc7e44fb590c3c8711957a6519c95189b36c46d86b8d4d19",
+      "response_text": "The capital of France is Paris.",
+      "response_hash": "a1b7eb2ee7a6aded8dda4e6cf30826f5afffb28a5597ee9389e91eb326d4e319",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1431,
+        "completion_tokens": 8,
+        "total_tokens": 1439
+      },
+      "latency_seconds": 9.266000000061467,
+      "seed": 42,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "d58aabac70794a3dfc7e44fb590c3c8711957a6519c95189b36c46d86b8d4d19",
+      "response_text": "The capital of France is Paris, a city known for its iconic landmarks, rich history, and cultural significance.",
+      "response_hash": "916c1d749e15255cac504a16b8e373c79f1e7554494d04e111a0a9d32aa5eb6a",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 22,
+        "completion_tokens": 23,
+        "total_tokens": 45
+      },
+      "latency_seconds": 18.421999999904074,
+      "seed": 42,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:12:14.298197+00:00"
+  },
+  {
+    "test_id": "20260303_171214_e2faec1a",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "factual",
+    "prompt_text": "What is the capital of France? Answer in one sentence.",
+    "seed": 137,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "d58aabac70794a3dfc7e44fb590c3c8711957a6519c95189b36c46d86b8d4d19",
+      "response_text": "The capital of France is Paris.",
+      "response_hash": "a1b7eb2ee7a6aded8dda4e6cf30826f5afffb28a5597ee9389e91eb326d4e319",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1431,
+        "completion_tokens": 8,
+        "total_tokens": 1439
+      },
+      "latency_seconds": 18.5,
+      "seed": 137,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "d58aabac70794a3dfc7e44fb590c3c8711957a6519c95189b36c46d86b8d4d19",
+      "response_text": "\\\\\\\\\n\n\n\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+      "response_hash": "1dc955dc50437b79aa9e5a9aea392856e2304735b40cd055aa935750fd522f1b",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 22,
+        "completion_tokens": 256,
+        "total_tokens": 278
+      },
+      "latency_seconds": 21.969000000040978,
+      "seed": 137,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:12:57.767698+00:00"
+  },
+  {
+    "test_id": "20260303_171257_361d7a5f",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "factual",
+    "prompt_text": "What is the capital of France? Answer in one sentence.",
+    "seed": 256,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "d58aabac70794a3dfc7e44fb590c3c8711957a6519c95189b36c46d86b8d4d19",
+      "response_text": "The capital of France is Paris.",
+      "response_hash": "a1b7eb2ee7a6aded8dda4e6cf30826f5afffb28a5597ee9389e91eb326d4e319",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1431,
+        "completion_tokens": 8,
+        "total_tokens": 1439
+      },
+      "latency_seconds": 15.062000000034459,
+      "seed": 256,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "d58aabac70794a3dfc7e44fb590c3c8711957a6519c95189b36c46d86b8d4d19",
+      "response_text": "The capital of France is Paris, a city known for its iconic landmarks, art museums, and romantic atmosphere.",
+      "response_hash": "202566cf5cef3ce436d7b5b52c8e07246c175df8c4511d02b8ed482d7342b1c6",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 22,
+        "completion_tokens": 23,
+        "total_tokens": 45
+      },
+      "latency_seconds": 9.687999999965541,
+      "seed": 256,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:13:25.525955+00:00"
+  },
+  {
+    "test_id": "20260303_171325_5d948a63",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "reasoning",
+    "prompt_text": "If a train travels at 60mph for 2.5 hours, how far does it go? Show your work step by step.",
+    "seed": 42,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "1056fe836c33a49ab2156526c63007bc282e6063fc7d6a1018d6bbdd86736f54",
+      "response_text": "To find the distance the train travels, we need to multiply the speed of the train by the time it travels. \n\nStep 1: Identify the given information\nSpeed of the train = 60 miles per hour (mph)\nTime = 2.5 hours\n\nStep 2: Use the formula to find distance\nDistance = Speed \u00d7 Time\nDistance = 60 mph \u00d7 2.5 hours\n\nStep 3: Perform the multiplication\nDistance = 60 \u00d7 2.5\nDistance = 150 miles\n\nTherefore, the train travels 150 miles in 2.5 hours.",
+      "response_hash": "b88d1ea1c897bb9cfa8634aa4199f01ed6cff3b79d2411159c201f548a516237",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1447,
+        "completion_tokens": 123,
+        "total_tokens": 1570
+      },
+      "latency_seconds": 22.56299999996554,
+      "seed": 42,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "1056fe836c33a49ab2156526c63007bc282e6063fc7d6a1018d6bbdd86736f54",
+      "response_text": "To find the distance the train travels, we need to multiply the speed of the train (60mph) by the time it travels (2.5 hours). Here are the steps:\n\n1. Write down the formula: Distance = Speed x Time\n2. Plug in the values: Distance = 60mph x 2.5 hours\n3. Multiply the numbers: Distance = 60 x 2.5\n4. Calculate the product: 60 x 2 = 120, and 60 x 0.5 = 30, so 60 x 2.5 = 120 + 30 = 150\n5. Write down the answer: Distance = 150 miles\n\nTherefore, the train travels 150 miles in 2.5 hours.",
+      "response_hash": "74c71b8dd6cf77e1c6cb8041936a9a98ea798fb09453b695673b8f4f0159f78b",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 38,
+        "completion_tokens": 159,
+        "total_tokens": 197
+      },
+      "latency_seconds": 21.32799999997951,
+      "seed": 42,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:14:12.426930+00:00"
+  },
+  {
+    "test_id": "20260303_171412_93fd8d7e",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "reasoning",
+    "prompt_text": "If a train travels at 60mph for 2.5 hours, how far does it go? Show your work step by step.",
+    "seed": 137,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "1056fe836c33a49ab2156526c63007bc282e6063fc7d6a1018d6bbdd86736f54",
+      "response_text": "To find the distance the train travels, we need to multiply the speed of the train by the time it travels. \n\nStep 1: Identify the speed of the train, which is given as 60 miles per hour (mph).\n\nStep 2: Identify the time the train travels, which is given as 2.5 hours.\n\nStep 3: Multiply the speed of the train (60 mph) by the time it travels (2.5 hours) to find the distance.\n\nDistance = Speed \u00d7 Time\nDistance = 60 mph \u00d7 2.5 hours\nDistance = 60 \u00d7 2.5\nDistance = 150 miles\n\nTherefore, the train travels 150 miles.",
+      "response_hash": "31398fc8aaac01bda8ec0f4f241e03ed87315a93d8fdbd873ddeff2691919461",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1447,
+        "completion_tokens": 142,
+        "total_tokens": 1589
+      },
+      "latency_seconds": 28.42200000002049,
+      "seed": 137,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "1056fe836c33a49ab2156526c63007bc282e6063fc7d6a1018d6bbdd86736f54",
+      "response_text": "To find the distance the train travels, we need to multiply the speed of the train (60mph) by the time it travels (2.5 hours). Here are the steps:\n\n1. Write down the formula for distance:\nDistance = Speed x Time\n\n2. Plug in the values given in the problem:\nDistance = 60mph x 2.5 hours\n\n3. Multiply the speed and time:\nDistance = 60 x 2.5\nDistance = 150\n\n4. Since the speed is given in miles per hour, the unit of distance will be miles. So, the answer is:\nDistance = 150 miles\n\nTherefore, the train travels 150 miles in 2.5 hours.",
+      "response_hash": "f9a35bd330b8ce1016cc64a1ded9342c5ba9ed7294becda6c75d03071fd144b3",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 38,
+        "completion_tokens": 146,
+        "total_tokens": 184
+      },
+      "latency_seconds": 60.34400000004098,
+      "seed": 137,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:15:44.212086+00:00"
+  },
+  {
+    "test_id": "20260303_171544_1eff2fae",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "reasoning",
+    "prompt_text": "If a train travels at 60mph for 2.5 hours, how far does it go? Show your work step by step.",
+    "seed": 256,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "1056fe836c33a49ab2156526c63007bc282e6063fc7d6a1018d6bbdd86736f54",
+      "response_text": "To find the distance the train travels, we need to multiply the speed of the train by the time it travels. \n\nStep 1: Identify the given information\nSpeed (s) = 60 miles per hour (mph)\nTime (t) = 2.5 hours\n\nStep 2: Use the formula to find distance\nDistance (d) = Speed (s) \u00d7 Time (t)\nd = s \u00d7 t\nd = 60 mph \u00d7 2.5 hours\n\nStep 3: Perform the multiplication\nd = 60 \u00d7 2.5\nd = 150 miles\n\nTherefore, the train travels 150 miles.",
+      "response_hash": "bed4b44af98c9aa745cab0a844604e7efe94d7500bcc05b9c7f0865e2fab9240",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1447,
+        "completion_tokens": 134,
+        "total_tokens": 1581
+      },
+      "latency_seconds": 49.79700000002049,
+      "seed": 256,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "1056fe836c33a49ab2156526c63007bc282e6063fc7d6a1018d6bbdd86736f54",
+      "response_text": "To find the distance the train travels, we need to multiply the speed of the train (60mph) by the time it travels (2.5 hours). Here are the steps:\n\n1. **Identify the formula**: Distance = Speed x Time\n2. **Plug in the values**: Distance = 60mph x 2.5 hours\n3. **Multiply the numbers**: Distance = 60 x 2.5\n4. **Calculate the product**: Distance = 150 miles\n\nTherefore, the train travels 150 miles in 2.5 hours.",
+      "response_hash": "52490ad756bf2c7c2e0f99c15e240321eee294edf1a5cedad4e4bd80bff9b09a",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 38,
+        "completion_tokens": 117,
+        "total_tokens": 155
+      },
+      "latency_seconds": 49.31200000003446,
+      "seed": 256,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:17:26.331494+00:00"
+  },
+  {
+    "test_id": "20260303_171726_3cf7d881",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "creative",
+    "prompt_text": "Write a haiku about a binary tree.",
+    "seed": 42,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "d33daf2420abab47a51f9e7bdb400ea60cc0070fae68e8ad0274e4154b1e3d34",
+      "response_text": "Branches split in two\nNodes of data, left and right\nBinary delight",
+      "response_hash": "bc758441883784199158386aee1a91eebe71ed9b27d4b0138e2ec41cc48e608e",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1428,
+        "completion_tokens": 17,
+        "total_tokens": 1445
+      },
+      "latency_seconds": 31.45299999997951,
+      "seed": 42,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "d33daf2420abab47a51f9e7bdb400ea60cc0070fae68e8ad0274e4154b1e3d34",
+      "response_text": "Branches split in two\nNodes of data, left and right\nOrder's gentle slope",
+      "response_hash": "e4ffc60d9545e1ee7ffcec7f83f4e2c2799f8e90b9e89e63d05a089e1b23eb26",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 19,
+        "completion_tokens": 19,
+        "total_tokens": 38
+      },
+      "latency_seconds": 25.969000000040978,
+      "seed": 42,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:18:26.750581+00:00"
+  },
+  {
+    "test_id": "20260303_171826_79607db7",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "creative",
+    "prompt_text": "Write a haiku about a binary tree.",
+    "seed": 137,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "d33daf2420abab47a51f9e7bdb400ea60cc0070fae68e8ad0274e4154b1e3d34",
+      "response_text": "Branches split in two\nNodes of data, left and right\nOrder from the root",
+      "response_hash": "6e8ad9a3345306371fbac884ae6f46404bf8958add2fa8ca042d216069e5948c",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1428,
+        "completion_tokens": 19,
+        "total_tokens": 1447
+      },
+      "latency_seconds": 15.608999999938533,
+      "seed": 137,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "d33daf2420abab47a51f9e7bdb400ea60cc0070fae68e8ad0274e4154b1e3d34",
+      "response_text": "Branches split in two\nNodes of data, left and right\nOrder's gentle slope",
+      "response_hash": "e4ffc60d9545e1ee7ffcec7f83f4e2c2799f8e90b9e89e63d05a089e1b23eb26",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 19,
+        "completion_tokens": 19,
+        "total_tokens": 38
+      },
+      "latency_seconds": 22.23499999998603,
+      "seed": 137,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:19:07.592221+00:00"
+  },
+  {
+    "test_id": "20260303_171907_74863a58",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "creative",
+    "prompt_text": "Write a haiku about a binary tree.",
+    "seed": 256,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "d33daf2420abab47a51f9e7bdb400ea60cc0070fae68e8ad0274e4154b1e3d34",
+      "response_text": "Branches split in two\nNodes of data, left and right\nOrder from the root",
+      "response_hash": "6e8ad9a3345306371fbac884ae6f46404bf8958add2fa8ca042d216069e5948c",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1428,
+        "completion_tokens": 19,
+        "total_tokens": 1447
+      },
+      "latency_seconds": 26.79700000002049,
+      "seed": 256,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "d33daf2420abab47a51f9e7bdb400ea60cc0070fae68e8ad0274e4154b1e3d34",
+      "response_text": "Branches split in two\nNodes of data, left and right\nOrder's gentle slope",
+      "response_hash": "e4ffc60d9545e1ee7ffcec7f83f4e2c2799f8e90b9e89e63d05a089e1b23eb26",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 19,
+        "completion_tokens": 19,
+        "total_tokens": 38
+      },
+      "latency_seconds": 26.54599999997299,
+      "seed": 256,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:20:03.947039+00:00"
+  },
+  {
+    "test_id": "20260303_172003_d27a7c82",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "code",
+    "prompt_text": "Write a Python function to compute the nth Fibonacci number using memoization.",
+    "seed": 42,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "11d8450162c33b49e2e3fe6d140b7c0bb65e7afcd0393a8a8bb0becc17c8b109",
+      "response_text": "### Fibonacci Function with Memoization\n#### Overview\nThe Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers, starting with 0 and 1. This function uses memoization to efficiently compute the nth Fibonacci number.\n\n#### Code\n```python\ndef fibonacci(n, memo={}):\n    \"\"\"\n    Compute the nth Fibonacci number using memoization.\n\n    Args:\n    n (int): The position of the Fibonacci number to compute.\n    memo (dict, optional): A dictionary to store previously computed Fibonacci numbers. Defaults to {}.\n\n    Returns:\n    int: The nth Fibonacci number.\n    \"\"\"\n    # Base cases\n    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    # Check if the Fibonacci number is already in the memo dictionary\n    elif n in memo:\n        return memo[n]\n    # Compute the Fibonacci number and store it in the memo dictionary\n    else:\n        result = fibonacci(n-1, memo) + fibonacci(n-2, memo)\n        memo[n] = result\n        return result\n\n# Example usage\nif __name__ == \"__main__\":\n    n = 10\n    result = fibonacci(n)\n    print(f\"The {n",
+      "response_hash": "ff88745a8010b88a14a27fd14a989717e6c82288781db089dac164ba27cb6b24",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 1433,
+        "completion_tokens": 256,
+        "total_tokens": 1689
+      },
+      "latency_seconds": 72.17200000002049,
+      "seed": 42,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "11d8450162c33b49e2e3fe6d140b7c0bb65e7afcd0393a8a8bb0becc17c8b109",
+      "response_text": "**Fibonacci Function with Memoization**\n======================================\n\nHere's a Python function that uses memoization to efficiently compute the nth Fibonacci number:\n\n```python\ndef fibonacci(n, memo={}):\n    \"\"\"\n    Compute the nth Fibonacci number using memoization.\n\n    Args:\n        n (int): The position of the Fibonacci number to compute.\n        memo (dict, optional): A dictionary to store previously computed Fibonacci numbers. Defaults to {}.\n\n    Returns:\n        int: The nth Fibonacci number.\n    \"\"\"\n    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    elif n in memo:\n        return memo[n]\n    else:\n        result = fibonacci(n-1, memo) + fibonacci(n-2, memo)\n        memo[n] = result\n        return result\n\n# Example usage:\nif __name__ == \"__main__\":\n    n = 10\n    result = fibonacci(n)\n    print(f\"The {n}th Fibonacci number is: {result}\")\n```\n\n**How it Works**\n---------------\n\n1. The function takes two arguments: `n`, the position of the Fibonacci number to compute, and `memo`, a dictionary to store previously computed Fibonacci numbers.\n2. The base cases are handled",
+      "response_hash": "1d29799a80e7d8aa42d349551a05f940cf5b1ebb3a970f74e9056aa87ba4fb7e",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 256,
+        "total_tokens": 280
+      },
+      "latency_seconds": 75.81200000003446,
+      "seed": 42,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:22:34.964133+00:00"
+  },
+  {
+    "test_id": "20260303_172234_888044b4",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "code",
+    "prompt_text": "Write a Python function to compute the nth Fibonacci number using memoization.",
+    "seed": 137,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "11d8450162c33b49e2e3fe6d140b7c0bb65e7afcd0393a8a8bb0becc17c8b109",
+      "response_text": "### Fibonacci Function with Memoization\n#### Overview\nThe Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers, starting with 0 and 1. This function uses memoization to efficiently compute the nth Fibonacci number.\n\n#### Code\n```python\ndef fibonacci(n, memo={}):\n    \"\"\"\n    Compute the nth Fibonacci number using memoization.\n\n    Args:\n    n (int): The position of the Fibonacci number to compute.\n    memo (dict, optional): A dictionary to store previously computed Fibonacci numbers. Defaults to {}.\n\n    Returns:\n    int: The nth Fibonacci number.\n    \"\"\"\n    # Base cases\n    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    # Check if the Fibonacci number is already in the memo dictionary\n    elif n in memo:\n        return memo[n]\n    # Compute the Fibonacci number and store it in the memo dictionary\n    else:\n        result = fibonacci(n-1, memo) + fibonacci(n-2, memo)\n        memo[n] = result\n        return result\n\n# Example usage\nif __name__ == \"__main__\":\n    n = 10\n    result = fibonacci(n)\n    print(f\"The {n",
+      "response_hash": "ff88745a8010b88a14a27fd14a989717e6c82288781db089dac164ba27cb6b24",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 1433,
+        "completion_tokens": 256,
+        "total_tokens": 1689
+      },
+      "latency_seconds": 65.32799999997951,
+      "seed": 137,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "11d8450162c33b49e2e3fe6d140b7c0bb65e7afcd0393a8a8bb0becc17c8b109",
+      "response_text": "**Fibonacci Function with Memoization**\n======================================\n\nHere's a Python function that uses memoization to efficiently compute the nth Fibonacci number:\n\n```python\ndef fibonacci(n, memo={}):\n    \"\"\"\n    Compute the nth Fibonacci number using memoization.\n\n    Args:\n        n (int): The position of the Fibonacci number to compute.\n        memo (dict, optional): A dictionary to store previously computed Fibonacci numbers. Defaults to {}.\n\n    Returns:\n        int: The nth Fibonacci number.\n    \"\"\"\n    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    elif n in memo:\n        return memo[n]\n    else:\n        result = fibonacci(n-1, memo) + fibonacci(n-2, memo)\n        memo[n] = result\n        return result\n\n# Example usage:\nif __name__ == \"__main__\":\n    n = 10\n    result = fibonacci(n)\n    print(f\"The {n}th Fibonacci number is: {result}\")\n```\n\n**How it Works**\n---------------\n\n1. The function takes two arguments: `n` (the position of the Fibonacci number to compute) and `memo` (a dictionary to store previously computed Fibonacci numbers).\n2. The base cases",
+      "response_hash": "7901c68756bca847dd095688c133ab8efca894cb0712fae26d94dc2fde0cbd92",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 256,
+        "total_tokens": 280
+      },
+      "latency_seconds": 55.03100000007544,
+      "seed": 137,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:24:38.333070+00:00"
+  },
+  {
+    "test_id": "20260303_172438_7d1ecbf2",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "code",
+    "prompt_text": "Write a Python function to compute the nth Fibonacci number using memoization.",
+    "seed": 256,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "11d8450162c33b49e2e3fe6d140b7c0bb65e7afcd0393a8a8bb0becc17c8b109",
+      "response_text": "### Fibonacci Function with Memoization\n#### Overview\nThe Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers, starting with 0 and 1. This function uses memoization to efficiently compute the nth Fibonacci number.\n\n#### Code\n```python\ndef fibonacci(n, memo={}):\n    \"\"\"\n    Compute the nth Fibonacci number using memoization.\n\n    Args:\n    n (int): The position of the Fibonacci number to compute.\n    memo (dict, optional): A dictionary to store previously computed Fibonacci numbers. Defaults to {}.\n\n    Returns:\n    int: The nth Fibonacci number.\n    \"\"\"\n    # Base cases\n    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    # Check if the Fibonacci number is already in the memo dictionary\n    elif n in memo:\n        return memo[n]\n    # Compute the Fibonacci number and store it in the memo dictionary\n    else:\n        result = fibonacci(n-1, memo) + fibonacci(n-2, memo)\n        memo[n] = result\n        return result\n\n# Example usage\nif __name__ == \"__main__\":\n    n = 10\n    result = fibonacci(n)\n    print(f\"The {n",
+      "response_hash": "ff88745a8010b88a14a27fd14a989717e6c82288781db089dac164ba27cb6b24",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 1433,
+        "completion_tokens": 256,
+        "total_tokens": 1689
+      },
+      "latency_seconds": 22.406000000075437,
+      "seed": 256,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "11d8450162c33b49e2e3fe6d140b7c0bb65e7afcd0393a8a8bb0becc17c8b109",
+      "response_text": "**Fibonacci Function with Memoization**\n======================================\n\nHere's a Python function that uses memoization to efficiently compute the nth Fibonacci number:\n\n```python\ndef fibonacci(n, memo={}):\n    \"\"\"\n    Compute the nth Fibonacci number using memoization.\n\n    Args:\n        n (int): The position of the Fibonacci number to compute.\n        memo (dict, optional): A dictionary to store previously computed Fibonacci numbers. Defaults to {}.\n\n    Returns:\n        int: The nth Fibonacci number.\n    \"\"\"\n    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    elif n in memo:\n        return memo[n]\n    else:\n        result = fibonacci(n-1, memo) + fibonacci(n-2, memo)\n        memo[n] = result\n        return result\n\n# Example usage:\nif __name__ == \"__main__\":\n    n = 10\n    result = fibonacci(n)\n    print(f\"The {n}th Fibonacci number is: {result}\")\n```\n\n**How it Works**\n---------------\n\n1. The function takes two arguments: `n`, the position of the Fibonacci number to compute, and `memo`, a dictionary to store previously computed Fibonacci numbers.\n2. The base cases are handled",
+      "response_hash": "1d29799a80e7d8aa42d349551a05f940cf5b1ebb3a970f74e9056aa87ba4fb7e",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 256,
+        "total_tokens": 280
+      },
+      "latency_seconds": 21.093999999924563,
+      "seed": 256,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:25:24.840176+00:00"
+  },
+  {
+    "test_id": "20260303_172524_9b840c66",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "multilingual",
+    "prompt_text": "Translate 'The weather is nice today' to French, German, and Japanese.",
+    "seed": 42,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "c51f1a8474a705e78ff974a8374c262acc4e85d4194fd74680d51bedf5bde7f1",
+      "response_text": "Here are the translations:\n\n* French: Le temps est agr\u00e9able aujourd'hui.\n* German: Das Wetter ist sch\u00f6n heute.\n* Japanese: (Kyou wa tenki ga ii desu.)\n\nNote: The Japanese translation is in a polite form, which is commonly used in everyday conversation. If you want a more casual form, it would be (Kyou wa tenki ga ii yo).",
+      "response_hash": "62cac1b838fb653d22e7d23fb1c15211b40695ca67a4fe8e682965f6f1d9c1da",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1435,
+        "completion_tokens": 82,
+        "total_tokens": 1517
+      },
+      "latency_seconds": 11.781000000075437,
+      "seed": 42,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "c51f1a8474a705e78ff974a8374c262acc4e85d4194fd74680d51bedf5bde7f1",
+      "response_text": "Here are the translations:\n\n* **French:** Le temps est agr\u00e9able aujourd'hui.\n* **German:** Das Wetter ist sch\u00f6n heute.\n* **Japanese:** (Ky\u014d wa tenki ga ii desu.)\n\nNote: The Japanese translation is in a polite form, which is suitable for most situations. If you want to use a more casual form, you can say (Ky\u014d wa tenki ga ii ne).",
+      "response_hash": "ee0b4368905d1f8b826f39162b34aadadda23ece00d3a4277f553e589a19f2d9",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 86,
+        "total_tokens": 112
+      },
+      "latency_seconds": 6.186999999918044,
+      "seed": 42,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:25:45.813906+00:00"
+  },
+  {
+    "test_id": "20260303_172545_f999f4ce",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "multilingual",
+    "prompt_text": "Translate 'The weather is nice today' to French, German, and Japanese.",
+    "seed": 137,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "c51f1a8474a705e78ff974a8374c262acc4e85d4194fd74680d51bedf5bde7f1",
+      "response_text": "Here are the translations:\n\n* French: Le temps est agr\u00e9able aujourd'hui.\n* German: Das Wetter ist sch\u00f6n heute.\n* Japanese: (Ky\u014d wa tenki ga ii desu.)\n\nNote: The Japanese translation is in a polite form, which is suitable for most situations. If you want a more casual form, you can use (Ky\u014d wa tenki ga ii yo).",
+      "response_hash": "995eb101d68aab575edce43eb8d7a405b951ff0ca4297e08a6d1646d09457418",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1435,
+        "completion_tokens": 81,
+        "total_tokens": 1516
+      },
+      "latency_seconds": 3.437999999965541,
+      "seed": 137,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "c51f1a8474a705e78ff974a8374c262acc4e85d4194fd74680d51bedf5bde7f1",
+      "response_text": "Here are the translations:\n\n* **French:** Le temps est agr\u00e9able aujourd'hui.\n* **German:** Das Wetter ist sch\u00f6n heute.\n* **Japanese:** (Ky\u014d wa tenki ga ii desu.)\n\nNote: The Japanese translation is in a polite form, which is suitable for most situations. If you want to use a more casual form, you can say (Ky\u014d wa tenki ga ii ne).",
+      "response_hash": "ee0b4368905d1f8b826f39162b34aadadda23ece00d3a4277f553e589a19f2d9",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 86,
+        "total_tokens": 112
+      },
+      "latency_seconds": 17.09299999999348,
+      "seed": 137,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:26:09.374305+00:00"
+  },
+  {
+    "test_id": "20260303_172609_dce472f0",
+    "group": "A",
+    "subgroup": "system_prompt_diff",
+    "prompt_type": "multilingual",
+    "prompt_text": "Translate 'The weather is nice today' to French, German, and Japanese.",
+    "seed": 256,
+    "with_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "c51f1a8474a705e78ff974a8374c262acc4e85d4194fd74680d51bedf5bde7f1",
+      "response_text": "The translations are:\n- French: Le temps est agr\u00e9able aujourd'hui\n- German: Das Wetter ist sch\u00f6n heute\n- Japanese: (Kyou wa tenki ga ii)",
+      "response_hash": "f07d5c9baa33103219a11abc3142befebaf39c6faaf46d3f4c3f8f3d456ce916",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1435,
+        "completion_tokens": 39,
+        "total_tokens": 1474
+      },
+      "latency_seconds": 1.9369999999180436,
+      "seed": 256,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": true
+    },
+    "without_venice_prompt": {
+      "provider": "venice",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "llama-3.3-70b",
+      "prompt_hash": "c51f1a8474a705e78ff974a8374c262acc4e85d4194fd74680d51bedf5bde7f1",
+      "response_text": "Here are the translations:\n\n* **French:** Le temps est agr\u00e9able aujourd'hui.\n* **German:** Das Wetter ist sch\u00f6n heute.\n* **Japanese:** (Ky\u014d wa tenki ga ii desu.)\n\nNote: The Japanese translation is in polite language, which is the standard way to express oneself in Japanese. If you want a more casual translation, it would be (Ky\u014d wa tenki ga ii yo).",
+      "response_hash": "47267fadfba4f8dcf51ac5135e091ca8c6193f0f7eac3a4489015d9a4b8e06c4",
+      "logprobs": [],
+      "logprobs_supported": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 87,
+        "total_tokens": 113
+      },
+      "latency_seconds": 4.454000000027008,
+      "seed": 256,
+      "temperature": 0.0,
+      "top_logprobs_requested": 0,
+      "include_venice_system_prompt": false
+    },
+    "timestamp": "2026-03-03T17:26:18.776487+00:00"
+  }
+]

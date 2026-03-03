@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Environment
+.env
+
+# Data (keep structure, ignore raw data)
+data/raw/**/*.json
+data/processed/**/*.npy
+data/proofs/**/*.bin
+!data/**/.gitkeep
+
+# Include analysis results and proof metadata
+!data/processed/analysis_results.json
+!data/proofs/*_meta.json
+
+# Models (generated, keep ONNX for proof verification)
+!models/.gitkeep
+
+# Reports (include generated reports)
+!reports/.gitkeep
+
+# Rust
+rust/target/
+rust/**/target/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

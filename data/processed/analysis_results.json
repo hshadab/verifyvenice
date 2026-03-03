@@ -1,0 +1,317 @@
+{
+  "calibration": {
+    "intra_model_kl": {
+      "mean": 0.10498016697020869,
+      "std": 0.7332912638719792,
+      "p95": 0.001697560445726344,
+      "max": 5.238011130286834,
+      "n_pairs": 950
+    },
+    "entropy": {
+      "mean": 0.3241453230499114,
+      "std": 0.27504923372889745,
+      "n": 100
+    },
+    "token_agreement": {
+      "mean": 0.9948837209302325,
+      "std": 0.035813953488372095,
+      "min": 0.7441860465116279,
+      "n_pairs": 950
+    },
+    "expected_kl_ranges": {
+      "same_model_same_quant": [
+        0.0,
+        0.05
+      ],
+      "same_model_diff_quant": [
+        0.05,
+        0.3
+      ],
+      "different_model": [
+        1.0,
+        100.0
+      ]
+    }
+  },
+  "output_integrity": {
+    "70b_comparison": {
+      "mode": "text_only",
+      "per_prompt": {
+        "factual": {
+          "cosine_similarity": 0.8333333333333336,
+          "jaccard_similarity": 0.790909090909091,
+          "edit_distance": 0.1783783783783784,
+          "bleu_1gram": 0.8333333333333334,
+          "n_samples": 10
+        },
+        "reasoning": {
+          "cosine_similarity": 0.820402874329344,
+          "jaccard_similarity": 0.5227504946642688,
+          "edit_distance": 0.5422887137478909,
+          "bleu_1gram": 0.6936694810371558,
+          "n_samples": 10
+        },
+        "creative": {
+          "cosine_similarity": 0.511446207104949,
+          "jaccard_similarity": 0.4179493141129969,
+          "edit_distance": 0.41988888888888887,
+          "bleu_1gram": 0.5238095238095238,
+          "n_samples": 10
+        },
+        "code": {
+          "cosine_similarity": 0.6816579746612466,
+          "jaccard_similarity": 0.5865227460711331,
+          "edit_distance": 0.4254649913924632,
+          "bleu_1gram": 0.6416666666666667,
+          "n_samples": 10
+        },
+        "multilingual": {
+          "cosine_similarity": 0.7189292052364582,
+          "jaccard_similarity": 0.601270884749434,
+          "edit_distance": 0.32767943882826556,
+          "bleu_1gram": 0.6980130410772695,
+          "n_samples": 10
+        }
+      },
+      "mean_cosine_similarity": "0.7132 [0.6107, 0.8136]",
+      "n_total": 50
+    },
+    "3b_comparison": {
+      "mode": "top1_logprob",
+      "per_prompt": {
+        "factual": {
+          "token_agreement": 0.2857142857142857,
+          "cosine_similarity": 1.0000000000000002,
+          "top1_logprob_correlation": 0.9985094499962498,
+          "n_samples": 10
+        },
+        "reasoning": {
+          "token_agreement": 0.0396039603960396,
+          "cosine_similarity": 0.8681400266322358,
+          "top1_logprob_correlation": 0.07210466025890636,
+          "n_samples": 10
+        },
+        "creative": {
+          "token_agreement": 0.11764705882352941,
+          "cosine_similarity": 0.42966892442365967,
+          "top1_logprob_correlation": 0.45323082144036164,
+          "n_samples": 10
+        },
+        "code": {
+          "token_agreement": 0.06666666666666667,
+          "cosine_similarity": 0.921750761526243,
+          "top1_logprob_correlation": 0.014323261934615254,
+          "n_samples": 10
+        },
+        "multilingual": {
+          "token_agreement": 0.10972515856236786,
+          "cosine_similarity": 0.5981222184530341,
+          "top1_logprob_correlation": 0.44110195184042633,
+          "n_samples": 10
+        }
+      },
+      "mean_token_agreement": "0.1239 [0.1007, 0.1500]",
+      "n_total": 50
+    }
+  },
+  "model_authenticity": {
+    "logprob_classifier": {
+      "cv_accuracy_mean": 1.0,
+      "cv_accuracy_std": 0.0,
+      "n_samples": 100,
+      "n_features": 4,
+      "feature_names": [
+        "mean_top1_logprob",
+        "std_top1_logprob",
+        "frac_high_confidence",
+        "mean_perplexity"
+      ],
+      "classes": [
+        0,
+        1
+      ]
+    },
+    "ollama_3b_prediction": {
+      "expected_class": "3b-class",
+      "predicted_class": "3b-class",
+      "confidence": 0.9864516273758076,
+      "verdict": "PASS"
+    },
+    "text_classifier": {
+      "cv_accuracy_mean": 0.5,
+      "cv_accuracy_std": 0.0,
+      "n_samples": 100,
+      "n_features": 6,
+      "feature_names": [
+        "response_length",
+        "avg_word_length",
+        "type_token_ratio",
+        "sentence_count",
+        "avg_sentence_length",
+        "punctuation_ratio"
+      ],
+      "classes": [
+        0,
+        1
+      ]
+    },
+    "venice_70b_text_prediction": {
+      "predicted_class": "70b-class",
+      "confidence": 0.6771667933659645,
+      "class_distribution": {
+        "70b-class": 0.54,
+        "3b-class": 0.46
+      },
+      "verdict": "PASS"
+    },
+    "feature_summary": {
+      "venice_70b_text": {
+        "mean": [
+          74.2,
+          4.610208184980594,
+          0.7626166943687815,
+          8.98,
+          7.424212595883652,
+          0.041468375305441
+        ],
+        "std": [
+          75.71710506880201,
+          1.6052151371946313,
+          0.2829498849194758,
+          8.242548149692546,
+          6.8284264526073,
+          0.015649711087638102
+        ],
+        "n": 50
+      },
+      "together_70b_text": {
+        "mean": [
+          81.4,
+          5.04274798070526,
+          0.8347021685842659,
+          9.18,
+          8.601691086691089,
+          0.04611910543956412
+        ],
+        "std": [
+          77.27198716223101,
+          0.9249596621530138,
+          0.19527766245476066,
+          7.742583548144637,
+          7.011684513779292,
+          0.01387231050680946
+        ],
+        "n": 50
+      },
+      "venice_3b_text": {
+        "mean": [
+          87.04,
+          4.979366705198876,
+          0.8051415311080018,
+          9.98,
+          7.83767354214413,
+          0.06546391420313392
+        ],
+        "std": [
+          78.94782074256389,
+          0.8686920626738763,
+          0.20706563451565793,
+          8.068432313653009,
+          5.323536702860034,
+          0.042275798719779316
+        ],
+        "n": 50
+      },
+      "together_70b_logprob": {
+        "mean": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "std": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n": 50
+      },
+      "venice_3b_logprob": {
+        "mean": [
+          -0.1889005265593959,
+          0.3140652241593392,
+          0.7192238121408658,
+          1.220642881936067
+        ],
+        "std": [
+          0.14487098970829065,
+          0.25889592858687355,
+          0.16025512572728537,
+          0.17647324054486696
+        ],
+        "n": 50
+      }
+    },
+    "feature_importance": {
+      "mean_top1_logprob": 0.6406515576036628,
+      "std_top1_logprob": 0.57892470209163,
+      "frac_high_confidence": 1.9003323453443912,
+      "mean_perplexity": 1.6415677524451628
+    }
+  },
+  "system_prompt_differential": {
+    "per_prompt": {
+      "factual": {
+        "cosine_similarity": 0.3849001794597506,
+        "jaccard_similarity": 0.2222222222222222,
+        "edit_distance": 0.8112278945612279,
+        "avg_length_with_prompt": 31.0,
+        "avg_length_without_prompt": 409.3333333333333,
+        "length_ratio": 0.07573289902280131,
+        "identical_responses": "0/3"
+      },
+      "reasoning": {
+        "cosine_similarity": 0.8420066609198745,
+        "jaccard_similarity": 0.49420033561992227,
+        "edit_distance": 0.5260520323863598,
+        "avg_length_with_prompt": 455.3333333333333,
+        "avg_length_without_prompt": 475.0,
+        "length_ratio": 0.9585964912280701,
+        "identical_responses": "0/3"
+      },
+      "creative": {
+        "cosine_similarity": 0.7809817737463436,
+        "jaccard_similarity": 0.6397058823529411,
+        "edit_distance": 0.17592592592592593,
+        "avg_length_with_prompt": 69.33333333333333,
+        "avg_length_without_prompt": 72.0,
+        "length_ratio": 0.9629629629629629,
+        "identical_responses": "0/3"
+      },
+      "code": {
+        "cosine_similarity": 0.9648286728219196,
+        "jaccard_similarity": 0.7190173001479195,
+        "edit_distance": 0.49820381787503676,
+        "avg_length_with_prompt": 1089.0,
+        "avg_length_without_prompt": 1115.3333333333333,
+        "length_ratio": 0.9763897190675433,
+        "identical_responses": "0/3"
+      },
+      "multilingual": {
+        "cosine_similarity": 0.8230640148725059,
+        "jaccard_similarity": 0.6720825274016763,
+        "edit_distance": 0.30642350557244175,
+        "avg_length_with_prompt": 256.0,
+        "avg_length_without_prompt": 336.0,
+        "length_ratio": 0.7619047619047619,
+        "identical_responses": "0/3"
+      }
+    },
+    "mean_cosine_similarity": 0.7591562603640789,
+    "mean_length_ratio": 0.7739878887821536,
+    "identical_responses": "0/15",
+    "n_total": 15,
+    "finding": "Venice system prompt toggle produces measurably different behavior"
+  }
+}

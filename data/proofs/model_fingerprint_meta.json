@@ -1,0 +1,8 @@
+{
+  "circuit_name": "model_fingerprint",
+  "input_hash": "test_id=test_001,model=venice-llama-3.3-70b",
+  "io_size_bytes": 106,
+  "proof_size_bytes": 24438,
+  "timestamp": "2026-03-03T19:42:55.537936902+00:00",
+  "vpp_size_bytes": 0
+}

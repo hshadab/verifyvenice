@@ -1,0 +1,8 @@
+{
+  "circuit_name": "output_comparison",
+  "input_hash": "features_dim=16",
+  "io_size_bytes": 116,
+  "proof_size_bytes": 24510,
+  "timestamp": "2026-03-03T19:54:57.871384187+00:00",
+  "vpp_size_bytes": 0
+}

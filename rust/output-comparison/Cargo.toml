@@ -1,0 +1,18 @@
+[package]
+name = "output-comparison"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+circuits-common = { path = "../circuits-common" }
+ark-serialize = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+chrono = { workspace = true }
+
+jolt-atlas-core = { workspace = true }
+atlas-onnx-tracer = { workspace = true }
+
+[[example]]
+name = "prove_comparison"
+path = "examples/prove_comparison.rs"
