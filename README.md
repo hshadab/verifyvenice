@@ -166,6 +166,14 @@ verifyvenice/
 4. **Text classifier at random chance (50%)** — text features alone cannot distinguish model sizes. This is a known limitation, not a bug.
 5. **zkML proofs verify computation, not data provenance** — the proofs attest that the similarity/classification was computed correctly on the given inputs, but don't prove the inputs came from Venice's API. This is an open research problem.
 
+## Roadmap
+
+- **Larger samples** — scale from 50 to 500+ prompts per group for stronger statistical power
+- **Longitudinal monitoring** — re-run weekly to detect infrastructure changes over time
+- **Data provenance via TLSNotary** — cryptographically prove API responses actually came from Venice's servers, closing the biggest gap in the current zkML story
+- **More providers** — apply the same methodology to other OpenAI-compatible APIs (Groq, Fireworks, etc.) to make the framework provider-agnostic
+- **Additional model sizes** — test 8B, 13B, and other sizes as providers add them, to stress-test the classifier across a wider range
+
 ## Running It Yourself
 
 ### Prerequisites
