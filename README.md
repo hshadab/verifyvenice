@@ -1,6 +1,6 @@
 # VerifyVenice
 
-**Open-source spot-check of Venice.ai's inference claims, with cryptographically verifiable computations.**
+**Open-source spot-check of Venice.ai's inference claims, with cryptographically verifiable computations powered by ICME Labs' [JOLT-Atlas](https://github.com/ICME-Lab/jolt-atlas) zero-knowledge machine learning.**
 
 Venice.ai markets itself as an "uncensored" AI platform running open-source models. This project tests two claims:
 
