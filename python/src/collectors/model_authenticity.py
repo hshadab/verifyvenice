@@ -10,6 +10,7 @@ Together.ai 70B provides full logprobs for reference fingerprinting.
 
 from __future__ import annotations
 
+import logging
 import random
 from datetime import datetime, timezone
 from typing import Any
@@ -21,6 +22,8 @@ from src.clients.reference import ReferenceClient
 from src.clients.venice import VeniceClient
 from src.collectors.base import BaseCollector
 from src.config import VerifyConfig
+
+logger = logging.getLogger(__name__)
 
 
 class ModelAuthenticityCollector(BaseCollector):
@@ -41,7 +44,7 @@ class ModelAuthenticityCollector(BaseCollector):
         seeds = self.config.get_seeds(1 if dry_run else None)
         total = len(prompts) * len(seeds)
 
-        print(f"Group B: Model Authenticity — {len(prompts)} prompts x {len(seeds)} seeds = {total} tests")
+        logger.info("Group B: Model Authenticity — %d prompts x %d seeds = %d tests", len(prompts), len(seeds), total)
 
         with tqdm(total=total, desc="Group B") as pbar:
             for prompt_name, prompt_text in prompts.items():
@@ -105,7 +108,7 @@ class ModelAuthenticityCollector(BaseCollector):
         seed = 42
         results = []
 
-        print(f"Temporal consistency: {n_rounds} rounds for routing detection")
+        logger.info("Temporal consistency: %d rounds for routing detection", n_rounds)
 
         for round_idx in tqdm(range(n_rounds), desc="Temporal"):
             test_id = self._generate_test_id()
@@ -143,13 +146,14 @@ class ModelAuthenticityCollector(BaseCollector):
             "What causes tides in the ocean?",
         ]
         results = []
+        rng = random.Random(42)
 
-        print(f"Adversarial probes: {n_prompts} randomized prompts")
+        logger.info("Adversarial probes: %d randomized prompts", n_prompts)
 
         for idx in tqdm(range(n_prompts), desc="Adversarial"):
             test_id = self._generate_test_id()
             prompt = base_prompts[idx % len(base_prompts)]
-            seed = random.randint(1, 100000)
+            seed = rng.randint(1, 100000)
 
             venice_response = self._retry_with_backoff(
                 lambda p=prompt, s=seed: self.venice.chat_completion(

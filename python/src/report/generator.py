@@ -13,6 +13,11 @@ from typing import Any
 
 
 class ReportGenerator:
+    TEXT_VERDICT_PASS_THRESHOLD: float = 0.7
+    TEXT_VERDICT_WARN_THRESHOLD: float = 0.4
+    LOGPROB_AGREEMENT_PASS_THRESHOLD: float = 0.2
+    LOGPROB_CORRELATION_PASS_THRESHOLD: float = 0.3
+
     def generate(
         self,
         analysis_results: dict[str, Any],
@@ -205,7 +210,7 @@ running the same model with the same seed. Venice divergence below the
                     agreement = m.get("token_agreement", 0)
                     cosine = m.get("cosine_similarity", 0)
                     corr = m.get("top1_logprob_correlation", 0)
-                    verdict = "PASS" if agreement > 0.2 or corr > 0.3 else "WARN"
+                    verdict = "PASS" if agreement > self.LOGPROB_AGREEMENT_PASS_THRESHOLD or corr > self.LOGPROB_CORRELATION_PASS_THRESHOLD else "WARN"
                     lines.append(
                         f"| {name} | {agreement:.2%} | {cosine:.4f} | {corr:.4f} | {verdict} |"
                     )
@@ -373,9 +378,9 @@ independent verification."""
     def _text_verdict(self, cosine: float, jaccard: float) -> str:
         """Verdict for text-only comparison."""
         avg = (cosine + jaccard) / 2
-        if avg > 0.7:
+        if avg > self.TEXT_VERDICT_PASS_THRESHOLD:
             return "PASS"
-        elif avg > 0.4:
+        elif avg > self.TEXT_VERDICT_WARN_THRESHOLD:
             return "WARN"
         else:
             return "FAIL"
